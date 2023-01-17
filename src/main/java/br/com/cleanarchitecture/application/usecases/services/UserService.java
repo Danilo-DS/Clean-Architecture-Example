@@ -1,9 +1,9 @@
-package br.com.cleanachitecture.application.services.interfaces;
+package br.com.cleanarchitecture.application.usecases.services;
 
 import java.util.List;
 
-import br.com.cleanachitecture.application.resources.request.UserRequestDTO;
-import br.com.cleanachitecture.application.resources.response.UserResponseDTO;
+import br.com.cleanarchitecture.application.resources.request.UserRequestDTO;
+import br.com.cleanarchitecture.application.resources.response.UserResponseDTO;
 
 public interface UserService {
 	

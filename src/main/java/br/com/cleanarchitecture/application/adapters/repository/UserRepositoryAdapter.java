@@ -1,11 +1,11 @@
-package br.com.cleanachitecture.application.adapters.interfaces;
+package br.com.cleanarchitecture.application.adapters.repository;
 
 import java.util.List;
 import java.util.Optional;
 
-import br.com.cleanachitecture.application.entities.UserEntity;
+import br.com.cleanarchitecture.application.entities.UserEntity;
 
-public interface UserRepositoryInterface {
+public interface UserRepositoryAdapter {
 	
 	List<UserEntity> listAll();
 	

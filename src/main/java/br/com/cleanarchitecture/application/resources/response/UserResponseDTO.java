@@ -1,4 +1,4 @@
-package br.com.cleanachitecture.application.resources.response;
+package br.com.cleanarchitecture.application.resources.response;
 
 import java.io.Serializable;
 

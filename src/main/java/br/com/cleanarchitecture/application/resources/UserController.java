@@ -1,8 +1,7 @@
-package br.com.cleanachitecture.application.resources;
+package br.com.cleanarchitecture.application.resources;
 
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PatchMapping;
@@ -13,16 +12,17 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.cleanachitecture.application.resources.request.UserRequestDTO;
-import br.com.cleanachitecture.application.resources.response.UserResponseDTO;
-import br.com.cleanachitecture.application.services.interfaces.UserService;
+import br.com.cleanarchitecture.application.resources.request.UserRequestDTO;
+import br.com.cleanarchitecture.application.resources.response.UserResponseDTO;
+import br.com.cleanarchitecture.application.usecases.services.UserService;
+import lombok.AllArgsConstructor;
 
 @RestController
+@AllArgsConstructor
 @RequestMapping(value = "/user")
 public class UserController {
 	
-	@Autowired
-	private UserService service;
+	private final UserService service;
 	
 	@GetMapping
 	public ResponseEntity<List<UserResponseDTO>> getAll(){

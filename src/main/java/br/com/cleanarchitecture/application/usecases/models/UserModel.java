@@ -1,4 +1,4 @@
-package br.com.cleanachitecture.application.resources.request;
+package br.com.cleanarchitecture.application.usecases.models;
 
 import java.io.Serializable;
 
@@ -11,13 +11,17 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class UserRequestDTO implements Serializable {
+public class UserModel implements Serializable {
+	
+	private static final long serialVersionUID = -1964781918439676249L;
 
-	private static final long serialVersionUID = 3307193835020076449L;
+	private Long id; 
 	
 	private String name;
 	
 	private String email;
 	
 	private String password;
+	
+	private boolean active;
 }

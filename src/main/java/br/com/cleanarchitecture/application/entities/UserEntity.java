@@ -1,4 +1,4 @@
-package br.com.cleanachitecture.application.entities;
+package br.com.cleanarchitecture.application.entities;
 
 import java.io.Serializable;
 

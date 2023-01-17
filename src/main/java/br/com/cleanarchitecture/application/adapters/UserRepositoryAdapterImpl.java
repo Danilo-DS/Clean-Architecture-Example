@@ -1,17 +1,17 @@
-package br.com.cleanachitecture.application.adapters;
+package br.com.cleanarchitecture.application.adapters;
 
 import java.util.List;
 import java.util.Optional;
 
 import org.springframework.transaction.annotation.Transactional;
 
-import br.com.cleanachitecture.application.adapters.interfaces.UserRepositoryInterface;
-import br.com.cleanachitecture.application.adapters.repository.UserRepository;
-import br.com.cleanachitecture.application.entities.UserEntity;
+import br.com.cleanarchitecture.application.adapters.repository.UserRepository;
+import br.com.cleanarchitecture.application.adapters.repository.UserRepositoryAdapter;
+import br.com.cleanarchitecture.application.entities.UserEntity;
 import lombok.AllArgsConstructor;
 
 @AllArgsConstructor
-public class UserRepositoryImpl implements UserRepositoryInterface {
+public class UserRepositoryAdapterImpl implements UserRepositoryAdapter {
 	
 	private final UserRepository repository;
 	

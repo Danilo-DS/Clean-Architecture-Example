@@ -8,7 +8,7 @@
 		<version>2.7.7</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>br.com.cleanachitecture</groupId>
+	<groupId>br.com.cleanarchitecture</groupId>
 	<artifactId>CleanArchitectureProject</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>CleanArchitectureProject</name>
