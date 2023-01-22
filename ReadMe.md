@@ -1,24 +1,42 @@
-# Read Me First
-The following was discovered as part of building this project:
+# Implementation Exmple `Clean Architecture`
 
-* The JVM level was changed from '11' to '17', review the [JDK Version Range](https://github.com/spring-projects/spring-framework/wiki/Spring-Framework-Versions#jdk-version-range) on the wiki for more details.
+Clean Architecture focuses on structuring the project by isolating the core of the application. The core of the application is composed of Entities and Business Rules:
 
-# Getting Started
+- Entities: Refers to the database entity.
+- Business Rules: These are company policies to achieve its objectives.
 
-### Reference Documentation
-For further reference, please consider the following sections:
+In this way, it is possible to change or add technologies without impacting the core of the application. This architecture provides this flexibility by working with some layers as shown in the image:
 
-* [Official Apache Maven documentation](https://maven.apache.org/guides/index.html)
-* [Spring Boot Maven Plugin Reference Guide](https://docs.spring.io/spring-boot/docs/3.0.1/maven-plugin/reference/html/)
-* [Create an OCI image](https://docs.spring.io/spring-boot/docs/3.0.1/maven-plugin/reference/html/#build-image)
-* [Spring Data JPA](https://docs.spring.io/spring-boot/docs/3.0.1/reference/htmlsingle/#data.sql.jpa-and-spring-data)
-* [Spring Web](https://docs.spring.io/spring-boot/docs/3.0.1/reference/htmlsingle/#web)
+[Layers Clean Architecture](https://blog.cleancoder.com/uncle-bob/images/2012-08-13-the-clean-architecture/CleanArchitecture.jpg)
 
-### Guides
-The following guides illustrate how to use some features concretely:
+In this image you can see the layers:
 
-* [Accessing Data with JPA](https://spring.io/guides/gs/accessing-data-jpa/)
-* [Building a RESTful Web Service](https://spring.io/guides/gs/rest-service/)
-* [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/)
-* [Building REST services with Spring](https://spring.io/guides/tutorials/rest/)
+- The yellow and red layer: It is composed by Entities and Use Cases (Business Rules) as mentioned before.
+- The green layer: These are the adapters, this layer is the bridge between external technologies and the core of the application.
+- The light blue layer: These are the external technologies used by the application.
 
+# Project Example:
+
+### Tecnologies and Framework:
+- Spring Framework (Spring Web, Spring Data JPA) version 2.7.7
+- Lombok
+- Java 11
+- H2Database
+
+### Struture Package:
+
+> root
+> |__config
+> |__adapters
+> |	|____repository
+> |__entities
+> |__resources
+> |	|__request
+> |	|__response
+> |__usecases
+> |	|__services
+> |	|__models
+> |__utils
+
+
+[Layers application](./Layers application.png)
