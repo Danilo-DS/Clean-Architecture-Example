@@ -7,7 +7,7 @@ Clean Architecture focuses on structuring the project by isolating the core of t
 
 In this way, it is possible to change or add technologies without impacting the core of the application. This architecture provides this flexibility by working with some layers as shown in the image:
 
-[Layers Clean Architecture](https://blog.cleancoder.com/uncle-bob/images/2012-08-13-the-clean-architecture/CleanArchitecture.jpg)
+![Layers Clean Architecture](https://blog.cleancoder.com/uncle-bob/images/2012-08-13-the-clean-architecture/CleanArchitecture.jpg "Layers Clean Architecture")
 
 In this image you can see the layers:
 
@@ -25,18 +25,21 @@ In this image you can see the layers:
 
 ### Struture Package:
 
-> root
-> |__config
-> |__adapters
-> |	|____repository
-> |__entities
-> |__resources
-> |	|__request
-> |	|__response
-> |__usecases
-> |	|__services
-> |	|__models
-> |__utils
+```
+project
+ |__config
+ |__adapters
+ |	|__repository
+ |__entities
+ |__resources
+ |	|__request
+ |	|__response
+ |__usecases
+ |	|__services
+ |	|__models
+ |__utils
+```
 
+### Application Layers
 
-[Layers application](./Layers application.png)
+![Application Layers](/ApplicationLayers.png "Application Layers")
